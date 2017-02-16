@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
 
+require('babel-register')();
+const webpackConfig = require('./webpack.config.babel').default;
+
 module.exports = (config) => {
 	const configuration = {
 
@@ -30,34 +33,11 @@ module.exports = (config) => {
 		},
 
 
-		webpack: {
+		webpack: Object.assign({
 			entry: {
 				index: './src/index.js',
 			},
-			resolve: {
-				extensions: ['.js'],
-			},
-			module: {
-				rules: [
-					{
-						test: /\.jsx?$/,
-						// include: [srcDir, testDir],
-						loader: 'babel',
-						query: {
-							presets: [
-								['es2015', { modules: false }],
-								'stage-0',
-							],
-							cacheDirectory: true,
-							babelrc: false,
-						},
-					},
-				],
-			},
-			resolveLoader: {
-				moduleExtensions: ['-loader'],
-			},
-		},
+		}, webpackConfig),
 
 		webpackMiddleware: { stats: 'errors-only' },
 
