@@ -13,6 +13,12 @@
     "test": "karma start --single-run",
     "prepublish": "npm run test && npm run build"
   },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "lib",
+    "dist"
+  ],
   "main": "lib/index.js",
   "author": "cap32",
   "license": "MIT",
