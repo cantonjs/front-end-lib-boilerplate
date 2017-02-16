@@ -2,7 +2,7 @@
   "name": "front-end-lib-boilerplate",
   "version": "0.0.0",
   "description": "front-end-lib-boilerplate",
-  "repository": "Cap32/front-end-lib-boilerplate",
+  "repository": "cantonjs/front-end-lib-boilerplate",
   "scripts": {
     "prebuild": "rimraf ./dist ./lib && mkdirp ./dist ./lib",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src -d lib",
