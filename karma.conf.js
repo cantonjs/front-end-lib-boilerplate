@@ -1,9 +1,8 @@
 /* eslint-disable max-len */
 
-require('babel-register')();
-const webpackConfig = require('./webpack.config.babel').default;
+import webpackConfig from './webpack.config.babel';
 
-module.exports = (config) => {
+export default (config) => {
 	const configuration = {
 
 		// base path that will be used to resolve all patterns (eg. files, exclude)
@@ -33,11 +32,12 @@ module.exports = (config) => {
 		},
 
 
-		webpack: Object.assign({
+		webpack: {
+			...webpackConfig,
 			entry: {
 				index: './src/index.js',
 			},
-		}, webpackConfig),
+		},
 
 		webpackMiddleware: { stats: 'errors-only' },
 

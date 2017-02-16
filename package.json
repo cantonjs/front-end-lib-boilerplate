@@ -9,8 +9,9 @@
     "build:umd": "webpack src dist/library.js",
     "build:min": "webpack -p src dist/library.min.js",
     "build": "npm run build:cjs && npm run build:umd && npm run build:min",
-    "start": "karma start",
-    "test": "karma start --single-run",
+    "karma": "babel-node -- ./node_modules/.bin/karma",
+    "start": "npm run karma -- start",
+    "test": "npm run karma -- start --single-run",
     "prepublish": "npm run test && npm run build"
   },
   "files": [
