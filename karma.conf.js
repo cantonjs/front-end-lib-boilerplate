@@ -16,6 +16,7 @@ export default (config) => {
 
 		// list of files / patterns to load in the browser
 		files: [
+			'index.html',
 			'index.js',
 		],
 
@@ -29,6 +30,7 @@ export default (config) => {
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
 			'index.js': ['webpack'],
+			'index.html': ['html2js'],
 		},
 
 

@@ -2427,6 +2427,10 @@ karma-chrome-launcher@^2.0.0:
     fs-access "^1.0.0"
     which "^1.2.1"
 
+karma-html2js-preprocessor@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/karma-html2js-preprocessor/download/karma-html2js-preprocessor-1.1.0.tgz#fc09edf04bbe2bb6eee9ba1968f826b7388020bd"
+
 karma-mocha-reporter@^2.2.0:
   version "2.2.2"
   resolved "http://registry.npm.taobao.org/karma-mocha-reporter/download/karma-mocha-reporter-2.2.2.tgz#876de9a287244e54a608591732a98e66611f6abe"
