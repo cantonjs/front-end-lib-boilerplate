@@ -13,6 +13,10 @@
 3. Modify `package.json` name, description, etc.
 4. Happy hacking
 
+## Related Projects
+
+- [react-lib-boilerplate](https://github.com/cantonjs/react-lib-boilerplate)
+
 ## License
 
 MIT
