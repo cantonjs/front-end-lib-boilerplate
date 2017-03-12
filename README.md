@@ -3,7 +3,7 @@
 ## Supports
 
 - ES6 (using `webpack` and `babel`)
-- Auto tesing (using `Karma`)
+- Auto testing (using `karma` and `mocha`)
 - Output `cmd`, `umd`, and minified `umd` files.
 
 ## Usages
